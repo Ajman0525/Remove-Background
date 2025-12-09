@@ -5,8 +5,8 @@ from PIL import Image
 model_name = "u2net_human_seg"
 session = new_session(model_name) 
 
-input_image_path = 'input_image.png' 
-output_image_path = 'output_new_model.png'
+input_image_path = 'your_input_image.png' 
+output_image_path = 'your_output_image.png' 
 
 input_image = Image.open(input_image_path)
 output_image = remove(input_image, session=session)
